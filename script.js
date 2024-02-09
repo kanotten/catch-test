@@ -11,14 +11,20 @@ try {
 }
 
 // another form of testing
-
 try {
-  const url = "someurl.com";
+  let url = "someurl.com"; // Use 'let' if you intend to reassign the variable
   url = "";
-  new date("2014-25-23").toISOString();
-  cnsole.log("finished no errors");
+  new Date("2014-25-23").toISOString(); // Correct the 'Date' object creation
+  console.log("finished, no errors");
 } catch (error) {
-  console.log("something went wrong");
+  console.log("something went wrong:", error);
 }
 
-// try testing step in sources, this shows how it goes thru the code
+// Debugging/testing step in sources
+// To step through code using browser developer tools:
+// 1. Open your browser's developer tools (usually F12 or right-click and "Inspect").
+// 2. Go to the "Sources" or "Debugger" tab.
+// 3. Locate your JavaScript file.
+// 4. Set breakpoints by clicking on the line number where you want to pause.
+// 5. Reload the page or trigger the code execution.
+// 6. The debugger will pause at the breakpoints, and you can step through the code using controls.
